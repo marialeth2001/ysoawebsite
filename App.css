@@ -32,7 +32,6 @@ body {
 	line-height: 1.2;
 	margin: 0;
 	padding: 0;
-
 }
 	
 .title-header h1 {
@@ -45,8 +44,6 @@ body {
 }
 	
 
-
-/* Style the header */
 .header-container {
 	display: flex;
 	align-items: center;
@@ -56,18 +53,16 @@ body {
 }
 
 
-/* Style the navigation bar */
+/* navigation bar */
 .nav-bar {
 	display: flex;
 	gap: 20px;
 }
 	
-	
 .nav-item {
 	position: relative; 
 }
-	
-	
+		
 .nav-content {
 	display: none; 
 	position: absolute; 
@@ -98,24 +93,10 @@ body {
 	padding: 10px 15px;
 }
 
-
-
-
-
-
-
-
-
-	
-
 .search-and-info {
 	display: flex;	
 }
 	
-
-
-
-
 .search-input {
 	position: relative;
 	display: flex;
@@ -163,8 +144,7 @@ body {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
 	z-index: 1; 
 }
-	
-	
+		
 .dropdown-content a {
 	color: #464545;
 	padding: 12px 16px;
@@ -208,8 +188,6 @@ body {
 	font-weight: 300; 
 }
     
-    
-
 .image-container {
 	flex: 1;
 	max-width: 45%;
@@ -263,8 +241,7 @@ body {
 .footer-social a {
 	color: #BD5319; 
 }
-    
-    
+     
 .footer-bottom {
 	border-top: 1px solid #444; 
 	padding-top: 10px;
@@ -282,8 +259,6 @@ body {
 	position: relative;
 	margin: 20px 0;
 }
-
-
 
 .background-image {
 	background-size: cover;
@@ -360,6 +335,17 @@ body {
 }
 
 /* housing */
+.housing-page .header-container,
+.housing-page .footer-container,
+.housing-page .main-container {
+  display: none; 
+}
+
+.housing-page .main-container {
+  background-image: none;
+  background-color: #F5F5F5;
+}
+
 .housing-page {
 	background-color: #F5F5F5; 
 	background-image: none; 
@@ -422,6 +408,10 @@ a, button {
 	overflow: hidden;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 	transition: transform 0.3s ease-in-out;
+
+	
+	width: calc(50% - 20px);
+	max-height: 10000px;
 }
 
 .housing-item-HA {
@@ -479,8 +469,6 @@ a, button {
 }
 
 /* FACTS website */
-
-
 .stats-container {
 	background-color: #00366bea; 
 	color: #d5d0d0;
@@ -504,7 +492,6 @@ a, button {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-
 .stats-header {
 	font-weight: 300;
 	color: #fff;
@@ -512,7 +499,6 @@ a, button {
 	font-size: 24px; 
 }
     
-
 .stats-number {
 	font-size: 36px;
 	margin-bottom: 5px; 
@@ -522,9 +508,6 @@ a, button {
 	font-size: 18px; 
 }
     
-
-
-	
 .stats-item h2 { 
 	font-family: 'Inter', sans-serif;
 	font-weight: 300; 
@@ -533,20 +516,14 @@ a, button {
 }
 
 /* ART MAJOR WEBSITE */
-
-
 .page-title {
+	padding-top: 30px;
 	padding: 20px;
 	background-color: #00366bd1; 
 	color: #d6d0d1;
 	font-family: 'Inter', sans-serif;
 	text-align: left;
-	
-	
-
 }
-
-
     
 .page-title h1 {
 	font-weight: lighter; 
@@ -579,7 +556,6 @@ a, button {
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
     
-
 .image1-container img, .image2-container img, .image3-container img {
 	width: 100%;
 	height: auto; 
@@ -595,7 +571,17 @@ a, button {
     
 
 /* LOGIN WEBSITE*/
-/* General reset */
+.login-page .header-container,
+.login-page .footer-container,
+.login-page .main-container {
+  display: none; 
+}
+
+.login-page .main-container {
+  background-image: none;
+  background-color: #F5F5F5; 
+}      
+
 * {
 	margin: 0;
 	padding: 0;
@@ -608,7 +594,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	/*height: 100vh;*/
 }
     
 .login-container {
@@ -643,7 +629,7 @@ label {
 	margin-bottom: 20px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-    }
+}
     
 button {
 	background-color: #00356B;
@@ -658,10 +644,6 @@ button {
 button:hover {
 	background-color: #002855;
 }
-
-
-    
-	
 
 @media (min-width: 768px) {
 	.footer {
@@ -705,7 +687,6 @@ button:hover {
 		
 	}
 
-
 	.content-section {
 		flex-direction: row-reverse; 
 	}
@@ -726,9 +707,9 @@ button:hover {
 	}
 	
 	.text-content {
-	top: 65%; 
-	left: 0; 
-	width: 40%; 
+		top: 65%; 
+		left: 0; 
+		width: 40%; 
 
 	}
 	.main-container{
@@ -757,4 +738,5 @@ button:hover {
 }
 
 
+    
     
