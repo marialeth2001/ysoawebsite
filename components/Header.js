@@ -4,7 +4,14 @@ import { NavLink, Link } from "react-router-dom";
 
 
 class Header extends React.Component {
-	render() {
+	render() {	
+		if (this.props.currentPath === '/housing') {
+			return null;
+		}
+		if (this.props.currentPath === '/login') {
+			return null;
+		}
+
 		return (
 			<header className="header-container">
 				<div className="title-header">
