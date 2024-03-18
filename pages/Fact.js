@@ -3,7 +3,7 @@ import React from 'react';
 class Fact extends React.Component {
     	render() {
 		return (
-			<main className="content-section-Fact">
+			<main className="content-section">
 				<section className="stats-container"> 
 					<article className="stats-item">
 						<h4>6,590</h4>
